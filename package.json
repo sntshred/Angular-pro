@@ -1,0 +1,17 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typings": "^2.1.1"
+  },
+  "dependencies": {
+    "bowser": "^1.7.0"
+  }
+}

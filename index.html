@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+            crossorigin="anonymous">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+                 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<style>
+    .selected{
+        color: red;
+    }
+</style>
+</head>
+
+<body ng-app="myapp">
+
+<div ng-controller="MySum as vm">
+    cal = {{vm.cal}}
+    sum = {{data}}
+
+    <hr>
+        <!--<div emp-details hello="{{oemp.Emp_Name}}" 
+                        oempname="{{oemp.Emp_Name}}" 
+                        oemp="oemp"
+                        ext-sum="vm.doubleage"
+                        ng-repeat="oemp in vm.Employees">
+            
+        </div>
+        -->
+
+        <!--<div emp-details1 hello="{{oemp.Emp_Name}}"   
+                        oempname="{{oemp.Emp_Name}}"   oemp="oemp"
+                        clickdir="vm.dosum"     
+                        ng-repeat="oemp in vm.Employees">
+            
+        </div>-->
+     
+      <!--<div emp-details1 hello="{{oemp.Emp_Name}}"   
+                        oempname="{{oemp.Emp_Name}}"   oemp="oemp"
+                        clickdir="vm.dosum(m)"     
+                        ng-repeat="oemp in vm.Employees">
+            
+        </div>-->
+         <div emp-de   oempname="{{oemp.Emp_Name}}"   oemp="oemp" 
+                         
+                        ng-repeat="oemp in vm.Employees">
+            
+        </div>
+     
+    </div>
+
+<script src="app.module.js"></script>
+<script src="sum/sum.controller.js"></script>
+<script src="sum/services/list.service.js">    </script>
+<script src="sum/directives/list.directive.js"></script>
+<!--<script src="sum/directives/override.css"></script>-->
+
+</body>
+
+</html>

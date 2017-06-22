@@ -1,0 +1,27 @@
+<div class="panel panel-danger">
+    <div class="panel-heading">
+        <h4>{{oempname}}</h4>
+    </div>
+<div  class="row">
+<div  class="col-sm-2"><strong ng-class="{'selected':ctrl1.selected}" >EmployeeName</strong></div>
+<div class="col-sm-2">{{ctrl1.oemp.Emp_Name}}</div>
+</div>
+<div class="row">
+<div class="col-sm-2">City</div>
+<div class="col-sm-2">{{ctrl1.oemp.Emp_City}}</div>
+</div>
+<div class="row">
+<div class="col-sm-2">ID</div>
+<div class="col-sm-2">{{ctrl1.oemp.Emp_Id}}</div>
+</div>
+<div class="row">
+<div class="col-sm-2">Age</div>
+<div class="col-sm-2">{{ctrl1.oemp.Emp_Age}}</div>
+</div>
+
+<!--<button ng-click="open()" >Open</button>
+<button ng-click="extSum()(oemp.Emp_Age)">Dobule Age</button>
+<button ng-click="clickdir()(oemp.Emp_Age)">Dobule Age11</button>-->
+<!--<button ng-click="clickdir({m:oemp.Emp_Age})">Dobule Age11</button>-->
+<button ng-click="ctrl1.toggleselect()">click</button>
+</div>
