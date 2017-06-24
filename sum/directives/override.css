@@ -1,0 +1,11 @@
+.customClass {
+	background: tan;
+    border: 5 solid red;
+    font-family: Georgia, 'Times New Roman', Times, serif
+
+}
+.secondClass{
+    background: maroon;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}

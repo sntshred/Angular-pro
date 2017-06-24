@@ -82,7 +82,7 @@
 // }})
 
 
-.directive("empDe",()=>{
+.directive("empDe",($interpolate)=>{
         return  {
             restrict:'EA',
             scope:{
@@ -91,11 +91,19 @@
                 
             },
             templateUrl: "sum/directives/list.emp.html",
-        controller:function(){
+        controller:function($scope){
+            var x = $interpolate(this.oemp.Emp_Name)($scope);
+            console.log(x+"helo ");
             this.selected="false";
             this.toggleselect = function(){
-                alert("heello cotr");
+          
                 this.selected=!this.selected;
+            } },
+             link:function(scope,ele,att){
+               
+            if(att.hello==='santosh1'){
+                // ele.css("border","5px solid black")
+                ele.addClass("customClass");
             }
             
         },

@@ -12,11 +12,14 @@
 </div>
 <div class="row">
 <div class="col-sm-2">ID</div>
-<div class="col-sm-2">{{ctrl1.oemp.Emp_Id}}</div>
+<!--<div class="col-sm-2" ng-class="{'customClass':ctrl1.oemp.Emp_Id>4,'secondClass':ctrl1.oemp.Emp_Id<4}">-->
+<div class="col-sm-2" ng-class="ctrl1.oemp.Emp_Id>4?'secondClass':'customClass'">
+    
+    {{ctrl1.oemp.Emp_Id}}</div>
 </div>
 <div class="row">
 <div class="col-sm-2">Age</div>
-<div class="col-sm-2">{{ctrl1.oemp.Emp_Age}}</div>
+<div class="col-sm-2" >{{ctrl1.oemp.Emp_Age}}</div>
 </div>
 
 <!--<button ng-click="open()" >Open</button>

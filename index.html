@@ -7,6 +7,7 @@
             crossorigin="anonymous">
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
                 crossorigin="anonymous"></script>
+
                  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 <style>
     .selected{
@@ -22,14 +23,14 @@
     sum = {{data}}
 
     <hr>
-        <!--<div emp-details hello="{{oemp.Emp_Name}}" 
+        <div emp-details hello="{{oemp.Emp_Name}}" 
                         oempname="{{oemp.Emp_Name}}" 
                         oemp="oemp"
                         ext-sum="vm.doubleage"
                         ng-repeat="oemp in vm.Employees">
             
         </div>
-        -->
+        
 
         <!--<div emp-details1 hello="{{oemp.Emp_Name}}"   
                         oempname="{{oemp.Emp_Name}}"   oemp="oemp"
@@ -44,7 +45,7 @@
                         ng-repeat="oemp in vm.Employees">
             
         </div>-->
-         <div emp-de   oempname="{{oemp.Emp_Name}}"   oemp="oemp" 
+         <div emp-de   oempname="{{oemp.Emp_Name}}" hello="{{oemp.Emp_Name}}"    oemp="oemp" 
                          
                         ng-repeat="oemp in vm.Employees">
             
@@ -52,11 +53,11 @@
      
     </div>
 
+<link href="sum/directives/override.css" rel="stylesheet" />
 <script src="app.module.js"></script>
 <script src="sum/sum.controller.js"></script>
 <script src="sum/services/list.service.js">    </script>
 <script src="sum/directives/list.directive.js"></script>
-<!--<script src="sum/directives/override.css"></script>-->
 
 </body>
 
